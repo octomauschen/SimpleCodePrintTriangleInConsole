@@ -1,0 +1,15 @@
+public class One {
+
+	public static void main(String[] args) {
+		String one = "";
+		int k = 0;
+		while (k < 5) {
+			one = one + "1";
+			System.out.println(one);
+			k++;
+
+		}
+
+	}
+
+}
