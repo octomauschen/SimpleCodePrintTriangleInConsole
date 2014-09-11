@@ -1,3 +1,28 @@
+package test;
+
+class One extends Thread{
+	public void run(){
+		String one = "";
+		int k = 0;
+		while (k < 5) {
+		one = one + "1";
+		System.out.println(one);
+		try {
+			sleep(1000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		k++;
+		}
+	}
+	public static void main (String [] args) throws InterruptedException{
+	One one = new One();
+	one.start();
+}
+}
+
+
+
 public class One {
 
 	public static void main(String[] args) {
